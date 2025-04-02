@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaja Baja gotigoti</title>
+    <style>
+        p{
+            color: rgb(217, 255, 0);
+            background-color: rgb(140, 161, 161);
+            padding: 60px;
+        }
+        body{
+            background-color: lightblue;
+            margin: 6%;
+        }
+        .p2{
+            color: red;
+        }
+        .margin{
+            margin:0px
+        }
+        #p4{
+            font-size: x-large;
+            color: blue  ;
+            background-color: red;
+        }
+        #p5{
+            color:violet;
+        }
+    </style>
+</head>
+<body>
+    <p>GOTIGOTI BAJA GOTIGOTI SOLO QUIERO CONVERSAR</p>
+    <a href="example.com">meo peazo de estilo</a>
+    <p class="p2">eeaaaaaaaaaa</p>
+    <p class="p2 margin" >ooaaaaaaaaaa</p>
+    <p id="p4" class="p2 margin"></p>
+
+    <button onclick="imprimirEnConsola()">click</button>
+    <button onclick="cambiaTextoParrafo()">Cambiar</button>
+
+    <p id="p5" class="p2 margin"></p>
+
+    <button onclick="add()">Add</button>
+    <button onclick="remove()">Remove</button>
+    <button onclick="reset()">Reset</button>
+
+    <script>
+        function imprimirEnConsola(){
+            console.log("Hola mundo");
+        }
+        function cambiaTextoParrafo(){
+            const el=document.getElementById("p4");
+            el .innerText="cambiar texto";
+        }
+
+        let contador=0;
+
+        function add(){
+            const el=document.getElementById("p5");
+            contador= contador+1;
+            el .innerText=contador;
+        }
+        function remove(){
+            const el=document.getElementById("p5");
+            contador=contador-1
+            el .innerText=contador;
+        }
+        function reset(){
+            const el=document.getElementById("p5");
+            contador=0
+            el .innerText=contador;
+        }
+
+    </script>
+    
+</body>
+</html>
