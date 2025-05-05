@@ -1,0 +1,115 @@
+/* Estilos generales para el contenedor */
+.container-indicators {
+  display: flex;
+  min-height: 100vh;
+  background-color: #e0f7fa; /* Fondo cian claro */
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+/* Estilo para el sidebar donde se encuentran los botones */
+.sidebar {
+  width: 250px;
+  background-color: #00796b; /* Fondo verde oscuro */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilo de los botones */
+.sidebar button {
+  background-color: #00bcd4; /* Fondo cian */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button:hover {
+  background-color: #00796b; /* Verde oscuro al pasar el ratón */
+}
+
+/* Estilo para el área donde se muestran los datos del indicador */
+.indicator-information {
+  flex-grow: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+}
+
+/* Títulos en la información del indicador */
+.indicator-information h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #00796b;
+  text-align: center;
+}
+
+/* Cada dato de indicador dentro del área de información */
+.indicator-detail {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  font-size: 99px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.indicator-detail p {
+  font-size: 18px;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Estilo especial para el nombre de la comuna */
+.indicator-detail p strong {
+  color: #00796b;  /* Verde oscuro */
+  font-size: 22px;  /* Aumento de tamaño para hacerlo más destacado */
+}
+
+/* Aumentar el tamaño de los valores */
+.indicator-detail p {
+  font-size: 20px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.indicator-detail p.value {
+  color: #00bcd4; /* Valor en cian */
+  font-weight: bold;
+}
+
+/* Estilo para el campo de búsqueda */
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px 0;
+  border-radius: 5px;
+  border: 1px solid #00796b; /* Verde oscuro */
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #00bcd4; /* Cian */
+  outline: none;
+}
+
+/* Resaltar el botón del indicador seleccionado */
+.sidebar button.selected {
+  background-color: #004d40; /* Un verde más oscuro */
+  color: white;
+  font-weight: bold;
+}

@@ -1,0 +1,30 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.75;
+  font-weight: 300;
+
+  color-scheme: rgb(154, 114, 41);
+  color: rgb(214, 198, 170);
+  background-color: #181a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  font-size: 50.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5;
+}
+
+
+button:hover,
+.interactive-element:hover {
+  background-color: #4a8fe7;
+  /* Azul más acorde a tu esquema */
+}
+
+
